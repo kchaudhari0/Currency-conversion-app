@@ -90,6 +90,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>kchaudhari0/ms-${project.artifactId}:${project.version}</name>
+					</image>
+					<docker>
+						<host>tcp://localhost:2375</host> <!-- Use TCP instead of npipe -->
+					</docker>
+					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
