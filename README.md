@@ -271,7 +271,7 @@
 
 ###  Prerequisites
 
-**Java**: `version x.y.z`
+**Java**: `17`
 
 ###  Installation
 
@@ -297,7 +297,7 @@ Build the project from source:
 To run the project, execute the following command:
 
 ```sh
-❯ java -jar target/myapp.jar
+❯ Run the project using Docker compose file: docker-compose up
 ```
 
 ###  Tests
