@@ -1,7 +1,4 @@
 <p align="center">
-  <img src="https://img.icons8.com/?size=512&id=55494&format=png" width="20%" alt="CURRENCY-CONVERSION-APP-logo">
-</p>
-<p align="center">
     <h1 align="center">CURRENCY-CONVERSION-APP</h1>
 </p>
 
@@ -14,8 +11,12 @@
 		<em>Built with the tools and technologies:</em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/badge/YAML-CB171E.svg?style=flat&logo=YAML&logoColor=white" alt="YAML">
 	<img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white" alt="java">
+    <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=fff" alt="Spring Boot">
+    <img src="https://img.shields.io/badge/H2-SQL-Blue?style=flat" alt="H2 SQL Database">
+    <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff" alt="Docker">
+    <img src="https://img.shields.io/badge/YAML-CB171E.svg?style=flat&logo=YAML&logoColor=white" alt="YAML">
+    <img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white" alt="IntelliJIDEA">
 </p>
 
 <br>
@@ -33,19 +34,22 @@
     - [ Tests](#-tests)
 - [ Project Roadmap](#-project-roadmap)
 - [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
-
 ---
 
 ##  Overview
 
-<code>❯ REPLACE-ME</code>
+`❯ Currency Conversion App built using Microservices`
+
+This application provides a service for converting between different currencies. It leverages a microservices architecture, with separate services for currency exchange rates and currency conversion calculations.
 
 ---
 
 ##  Features
-
+- **Currency Conversion:** Convert an amount from one currency to another using real-time exchange rates.
+- **Microservices Architecture:**  The application is divided into independent, loosely coupled services for better maintainability and scalability.
+- **API Gateway:** Provides a single entry point for all clients to access the microservices.
+- **Service Discovery (Eureka):** Services register themselves with a Eureka server, allowing for dynamic service discovery and load balancing.
+- **Resilience (Circuit Breaker):**  Implements circuit breaker patterns to handle failures gracefully and prevent cascading failures.
 
 ---
 
@@ -92,187 +96,18 @@
 
 ##  Modules
 
-<details closed><summary>.</summary>
-
-| File | Summary |
-| --- | --- |
-| [docker-compose.yml](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/docker-compose.yml) | <code>❯ REPLACE-ME</code> |
-
-</details>
-
-<details closed><summary>api-gateway</summary>
-
-| File | Summary |
-| --- | --- |
-| [mvnw.cmd](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/api-gateway/mvnw.cmd) | <code>❯ REPLACE-ME</code> |
-| [mvnw](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/api-gateway/mvnw) | <code>❯ REPLACE-ME</code> |
-
-</details>
-
-<details closed><summary>api-gateway.src.main.java.com.project.microservice.api_gateway</summary>
-
-| File | Summary |
-| --- | --- |
-| [ApiGatewayApplication.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/api-gateway/src/main/java/com/project/microservice/api_gateway/ApiGatewayApplication.java) |
-
-</details>
-
-<details closed><summary>api-gateway.src.main.java.com.project.microservice.api_gateway.Configuration</summary>
-
-| File | Summary |
-| --- | --- |
-| [ApiGatewayConfiguration.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/api-gateway/src/main/java/com/project/microservice/api_gateway/Configuration/ApiGatewayConfiguration.java)  |
-
-</details>
-
-<details closed><summary>api-gateway.src.main.java.com.project.microservice.api_gateway.Logging</summary>
-
-| File | Summary |
-| --- | --- |
-| [LogFilter.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/api-gateway/src/main/java/com/project/microservice/api_gateway/Logging/LogFilter.java)  |
-
-</details>
-
-<details closed><summary>api-gateway.src.test.java.com.project.microservice.api_gateway</summary>
-
-| File | Summary |
-| --- | --- |
-| [ApiGatewayApplicationTests.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/api-gateway/src/test/java/com/project/microservice/api_gateway/ApiGatewayApplicationTests.java) |
-
-</details>
-
-<details closed><summary>naming-server.src.main.java.com.project.microservice.naming_server</summary>
-
-| File | Summary |
-| --- | --- |
-| [NamingServerApplication.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/naming-server/src/main/java/com/project/microservice/naming_server/NamingServerApplication.java) |
-
-</details>
-
-<details closed><summary>naming-server.src.test.java.com.project.microservice.naming_server</summary>
-
-| File | Summary |
-| --- | --- |
-| [NamingServerApplicationTests.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/naming-server/src/test/java/com/project/microservice/naming_server/NamingServerApplicationTests.java)  |
-
-</details>
-
-<details closed><summary>currency-exchange-service</summary>
-
-| File | Summary |
-| --- | --- |
-| [mvnw.cmd](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/mvnw.cmd) |
-| [mvnw](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/mvnw)  |
-
-</details>
-
-<details closed><summary>currency-exchange-service.src.main.resources</summary>
-
-| File | Summary |
-| --- | --- |
-| [data.sql](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/src/main/resources/data.sql) |
-
-</details>
-
-<details closed><summary>currency-exchange-service.src.main.java.com.project.microservices.currency_exchange_service</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyExchangeServiceApplication.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/src/main/java/com/project/microservices/currency_exchange_service/CurrencyExchangeServiceApplication.java)|
-
-</details>
-
-<details closed><summary>currency-exchange-service.src.main.java.com.project.microservices.currency_exchange_service.Repository</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyExchangeRespository.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/src/main/java/com/project/microservices/currency_exchange_service/Repository/CurrencyExchangeRespository.java) |
-
-</details>
-
-<details closed><summary>currency-exchange-service.src.main.java.com.project.microservices.currency_exchange_service.Controller</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyExchangeController.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/src/main/java/com/project/microservices/currency_exchange_service/Controller/CurrencyExchangeController.java)  |
-| [CircuitBreakerController.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/src/main/java/com/project/microservices/currency_exchange_service/Controller/CircuitBreakerController.java) |
-
-</details>
-
-<details closed><summary>currency-exchange-service.src.main.java.com.project.microservices.currency_exchange_service.Beans</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyExchange.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/src/main/java/com/project/microservices/currency_exchange_service/Beans/CurrencyExchange.java) |
-
-</details>
-
-<details closed><summary>currency-exchange-service.src.test.java.com.project.microservices.currency_exchange_service</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyExchangeServiceApplicationTests.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-exchange-service/src/test/java/com/project/microservices/currency_exchange_service/CurrencyExchangeServiceApplicationTests.java) |
-
-</details>
-
-<details closed><summary>currency-conversion-service</summary>
-
-| File | Summary |
-| --- | --- |
-| [mvnw.cmd](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-conversion-service/mvnw.cmd) |
-| [currency_conversion_service-openapi.yaml](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-conversion-service/currency_conversion_service-openapi.yaml) |
-| [mvnw](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-conversion-service/mvnw)  |
-
-</details>
-
-<details closed><summary>currency-conversion-service.src.main.java.com.project.microservices.currency_conversion_service</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyConversionServiceApplication.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-conversion-service/src/main/java/com/project/microservices/currency_conversion_service/CurrencyConversionServiceApplication.java)  |
-
-</details>
-
-<details closed><summary>currency-conversion-service.src.main.java.com.project.microservices.currency_conversion_service.Controller</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyConversionController.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-conversion-service/src/main/java/com/project/microservices/currency_conversion_service/Controller/CurrencyConversionController.java)  |
-
-</details>
-
-<details closed><summary>currency-conversion-service.src.main.java.com.project.microservices.currency_conversion_service.Proxy</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyExchangeProxy.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-conversion-service/src/main/java/com/project/microservices/currency_conversion_service/Proxy/CurrencyExchangeProxy.java)  |
-
-</details>
-
-<details closed><summary>currency-conversion-service.src.main.java.com.project.microservices.currency_conversion_service.Beans</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyConversion.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-conversion-service/src/main/java/com/project/microservices/currency_conversion_service/Beans/CurrencyConversion.java)  |
-
-</details>
-
-<details closed><summary>currency-conversion-service.src.test.java.com.project.microservices.currency_conversion_service</summary>
-
-| File | Summary |
-| --- | --- |
-| [CurrencyConversionServiceApplicationTests.java](https://github.com/kchaudhari0/Currency-conversion-app/blob/main/currency-conversion-service/src/test/java/com/project/microservices/currency_conversion_service/CurrencyConversionServiceApplicationTests.java) |
-
-</details>
-
----
+- **naming-server:** This module acts as the Eureka server for service discovery.
+- **currency-exchange-service:** This service manages currency exchange rates. It exposes an API to retrieve the exchange rate for a given currency pair.
+- **currency-conversion-service:** This service performs the actual currency conversion. It fetches the exchange rate from the `currency-exchange-service` and calculates the converted amount.
+- **api-gateway:** This module acts as an API gateway, routing requests to the appropriate microservices.
 
 ##  Getting Started
 
 ###  Prerequisites
 
-**Java**: `17`
-
+- **Java:** Version 17 or higher.
+- **Maven:** For building and managing dependencies.
+- **Docker (Optional):** For running the application in a containerized environment.
 ###  Installation
 
 Build the project from source:
@@ -298,8 +133,26 @@ To run the project, execute the following command:
 
 ```sh
 ❯ Run the project using Docker compose file: docker-compose up
-```
 
+ This command will build and start all the services defined in the `docker-compose.yml` file.
+```
+#### Running Locally (Without Docker)
+
+1. **Start the Naming Server:**
+    - Navigate to the `naming-server` directory.
+    - Run `mvn spring-boot:run`
+
+2. **Start the Currency Exchange Service:**
+    - Navigate to the `currency-exchange-service` directory.
+    - Run `mvn spring-boot:run`
+
+3. **Start the Currency Conversion Service:**
+    - Navigate to the `currency-conversion-service` directory.
+    - Run `mvn spring-boot:run`
+
+4. **Start the API Gateway:**
+    - Navigate to the `api-gateway` directory.
+    - Run `mvn spring-boot:run`
 ###  Tests
 
 Execute the test suite using the following command:
@@ -307,9 +160,13 @@ Execute the test suite using the following command:
 ```sh
 ❯ mvn test
 ```
+##  Project Roadmap
+
+- **[Optional] Implement API versioning.**
+- **[Optional] Add security features like authentication and authorization.**
+- **[Optional] Implement a distributed tracing system for better monitoring and debugging.**
 
 ---
-
 
 ##  Contributing
 
@@ -356,9 +213,3 @@ Contributions are welcome! Here are several ways you can contribute:
 
 ---
 
-
-##  Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
-
----
